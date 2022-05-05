@@ -1,1 +1,3 @@
-# capstone_natural_disasters
+# Infrastructure Damage Assessment
+
+Data from https://xview2.org/dataset
