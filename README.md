@@ -14,7 +14,7 @@ Assessing building damage after a disaster has struck is very important for disa
 
 The dataset used for this project is the Xview2 challenge dataset which can be obtained from https://xview2.org/dataset. It contains pre and post disaster images of natural disasters as well as metadata which is a json file containing damage levels and coordinates of buildings. The different natural disasters present can be seen in the graph below:
 
-<img src='images/natural-disasters.png'>
+<img src='images/disasters.png'>
 
 There are two main goals for this project:
 1. Detecting buildings in the images
