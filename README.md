@@ -1,6 +1,6 @@
 # Building Damage Assessment 
 
-<img src='https://maxarv2-cms-production.s3.amazonaws.com/uploads/image/image_value/712/Durban_ZA_WV2_30AUG2021_WEB.jpg'>
+<img src='images/maxar.jpg'>
 
 [Source: Maxar images](!maxar.com/open-data)
 
