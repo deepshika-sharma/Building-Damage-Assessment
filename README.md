@@ -22,11 +22,36 @@ There are two main goals for this project:
 
 The models used in the project are Res-Net and U-Net. These models are used for classification and image segmentation problems. 
 
-<img src='images/u-net.png'>
+<br><br>
+
+### Residual Networks (Res-Net)
+It was proposed in 2015 by researchers at Microsoft Research to solve the problem of vanishing/exploding gradient. It has a technique called `skip connections` which skips training from a few layers and connects directly to the output. The advantage of this is that if any layer reduces performance of the architecture it will be skipped by regularization.[Source](!https://www.geeksforgeeks.org/residual-networks-resnet-deep-learning/)
 
 <img src='images/resnet.jpeg'>
 
-[Source](!https://aditi-mittal.medium.com/introduction-to-u-net-and-res-net-for-image-segmentation-9afcb432ee2f)
+
+<br><br>
+
+### UNet
+It was first designed and applied in 2015 to process biomedical images. It is not only used for image classification but also for image localisation. The reason it is able to localise is that it is able to distinguish borders by doing classification on every pixel.[Source](!https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5)
+
+<img src='images/u-net.png'>
 
 
-The images were first masked 
+
+[Resnet and Unet images](!https://aditi-mittal.medium.com/introduction-to-u-net-and-res-net-for-image-segmentation-9afcb432ee2f)
+
+
+The images were first masked with the shapes of the polygons from the metadata and then image segmentation was carried out on the images using ResNet and UNet and levels of damage were classified.
+
+The building damages were assessed according to a scale (Joint Damage Scale) provided for the XView2 challenge.
+
+<img src='./images/damage-scale.png'>
+
+
+**Pre Disaster Image**
+<img src='./images/pre.png'>
+
+
+**Post Disaster Image**
+<img src='./images/post.png'>
