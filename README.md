@@ -31,7 +31,7 @@ The models used in the project are Res-Net and U-Net. These models are used for 
 ### Residual Networks (Res-Net)
 It was proposed in 2015 by researchers at Microsoft Research to solve the problem of vanishing/exploding gradient. It has a technique called `skip connections` which skips training from a few layers and connects directly to the output. The advantage of this is that if any layer reduces performance of the architecture it will be skipped by regularization.
 
-[Source: ResNet](!https://www.geeksforgeeks.org/residual-networks-resnet-deep-learning/)
+<a href='https://www.geeksforgeeks.org/residual-networks-resnet-deep-learning/' target='_blank'>ResNet</a>
 
 <img src='images/resnet.jpeg'>
 
@@ -41,13 +41,15 @@ It was proposed in 2015 by researchers at Microsoft Research to solve the proble
 ### UNet
 It was first designed and applied in 2015 to process biomedical images. It is not only used for image classification but also for image localisation. The reason it is able to localise is that it is able to distinguish borders by doing classification on every pixel.
 
-[Source: UNet](!https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5)
+
+<a href='https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5' target='_blank'>UNet</a>
 
 <img src='images/u-net.png'>
 
 
 
-[Resnet and Unet images](!https://aditi-mittal.medium.com/introduction-to-u-net-and-res-net-for-image-segmentation-9afcb432ee2f)
+<a href='https://aditi-mittal.medium.com/introduction-to-u-net-and-res-net-for-image-segmentation-9afcb432ee2f' target='_blank'>ResNet and UNet images</a>
+
 
 
 The images were first masked with the shapes of the polygons from the metadata and then image segmentation was carried out on the images using ResNet and UNet and levels of damage were classified.
