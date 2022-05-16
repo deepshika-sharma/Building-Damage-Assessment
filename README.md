@@ -12,6 +12,8 @@ Assessing building damage after a disaster has struck is very important for disa
 
 `Using pre and post disaster satellite images of different buildings and locations can we predict the level of damage of a building?`
 
+## Methodology
+
 The dataset used for this project is the Xview2 challenge dataset which can be obtained from https://xview2.org/dataset. It contains pre and post disaster images of natural disasters as well as metadata which is a json file containing damage levels and coordinates of buildings. The different natural disasters present can be seen in the graph below:
 
 <img src='images/disasters.png'>
@@ -19,6 +21,8 @@ The dataset used for this project is the Xview2 challenge dataset which can be o
 There are two main goals for this project:
 1. Detecting buildings in the images
 2. Classifiying the level of damage.
+
+Firstly, masks were created for the images and then patches were created for the images and masks, which were then used in the models.
 
 The models used in the project are Res-Net and U-Net. These models are used for classification and image segmentation problems. 
 
@@ -54,6 +58,7 @@ The building damages were assessed according to a scale (Joint Damage Scale) pro
 
 
 #### Pre Disaster Image
+
 <img src='./images/pre.png'>
 
 
@@ -63,8 +68,8 @@ The building damages were assessed according to a scale (Joint Damage Scale) pro
 
 
 ## Conclusion and Recommendations
-The final model was able to achieve an overall f1 score of 0.8 for localisation and 0.85 for classifiying the damage level.The model successfully identified undamaged buildings with an f1 score of 85% an predicts 3 damage classes (minor, major damage and destroyed) with 60%, 68.7% and 74.2% f1 scores respectively.
+The final model which was the unet model was able to achieve an overall f1 score of 0.83 for localisation and 0.70 for classifiying the damage level.The model successfully identified undamaged buildings with an f1 score of 80% an predicts 3 damage classes (minor, major damage and destroyed) with 37.7%, 66.2% and 74.2% and f1 scores respectively.
 
-One of the drawbacks for the project was the cloud cover in the images which made predictions harder. Also, to reducing computing time the patches with no buildings can be removed.
+One of the drawbacks for the project was the cloud cover in the images which made predictions harder. Also, to reduce computing time the patches with no buildings can be removed.
 
 Further testing can be done to determine the transferability of the model to other geographic areas and also the viability of introducing other kinds of images like social media images.
