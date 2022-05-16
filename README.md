@@ -25,7 +25,9 @@ The models used in the project are Res-Net and U-Net. These models are used for 
 <br><br>
 
 ### Residual Networks (Res-Net)
-It was proposed in 2015 by researchers at Microsoft Research to solve the problem of vanishing/exploding gradient. It has a technique called `skip connections` which skips training from a few layers and connects directly to the output. The advantage of this is that if any layer reduces performance of the architecture it will be skipped by regularization.[Source](!https://www.geeksforgeeks.org/residual-networks-resnet-deep-learning/)
+It was proposed in 2015 by researchers at Microsoft Research to solve the problem of vanishing/exploding gradient. It has a technique called `skip connections` which skips training from a few layers and connects directly to the output. The advantage of this is that if any layer reduces performance of the architecture it will be skipped by regularization.
+
+[Source: ResNet](!https://www.geeksforgeeks.org/residual-networks-resnet-deep-learning/)
 
 <img src='images/resnet.jpeg'>
 
@@ -33,7 +35,9 @@ It was proposed in 2015 by researchers at Microsoft Research to solve the proble
 <br><br>
 
 ### UNet
-It was first designed and applied in 2015 to process biomedical images. It is not only used for image classification but also for image localisation. The reason it is able to localise is that it is able to distinguish borders by doing classification on every pixel.[Source](!https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5)
+It was first designed and applied in 2015 to process biomedical images. It is not only used for image classification but also for image localisation. The reason it is able to localise is that it is able to distinguish borders by doing classification on every pixel.
+
+[Source: UNet](!https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5)
 
 <img src='images/u-net.png'>
 
@@ -49,9 +53,18 @@ The building damages were assessed according to a scale (Joint Damage Scale) pro
 <img src='./images/damage-scale.png'>
 
 
-**Pre Disaster Image**
+#### Pre Disaster Image
 <img src='./images/pre.png'>
 
 
-**Post Disaster Image**
+#### Post Disaster Image
+
 <img src='./images/post.png'>
+
+
+## Conclusion and Recommendations
+The final model was able to achieve an overall f1 score of 0.8 for localisation and 0.85 for classifiying the damage level.The model successfully identified undamaged buildings with an f1 score of 85% an predicts 3 damage classes (minor, major damage and destroyed) with 60%, 68.7% and 74.2% f1 scores respectively.
+
+One of the drawbacks for the project was the cloud cover in the images which made predictions harder. Also, to reducing computing time the patches with no buildings can be removed.
+
+Further testing can be done to determine the transferability of the model to other geographic areas and also the viability of introducing other kinds of images like social media images.
